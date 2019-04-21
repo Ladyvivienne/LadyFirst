@@ -50,6 +50,6 @@
 
 本来设了一个trial文件，想clone到本地push commit。
 
-结果，把trial文件在github上也搞没了。
+结果把trial文件在github上也搞没了。
 
-我不明白，自己做了什么骚操作。
+我不明白自己做了什么骚操作。
