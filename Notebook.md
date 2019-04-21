@@ -47,3 +47,9 @@
 ```
 学会用GUI界面操作，add、commit、push、brach、stash的用法。
 ```
+
+本来设了一个trial文件，想clone到本地push commit。
+
+结果，把trial文件在github上也搞没了。
+
+我不明白，自己做了什么骚操作。
