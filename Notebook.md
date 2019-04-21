@@ -48,12 +48,12 @@
 学会用GUI界面操作，add、commit、push、brach、stash的用法。
 ```
 
-Add，是指在本地仓库里添加一个txt文件。
+Add，是指在本地仓库里添加一个工程文件（txt、py）。
 
-commit，是指在Gui里面写注释。
+commit，是指在Gui里面写注释，push后会同步到github上的pull resquest里可见。
 
-push，是把txt文件（加了注释后）上传到github。
+push，是把txt文件上传到github。
 
-brach，是创造一个跟github上原项目版本不同的项目分支，新命名名字。
+brach，是创造一个跟github上原项目版本一样的项目，新命名名字。
 
 ■stash，在哪里，没遇到诶诶诶诶
