@@ -1,7 +1,7 @@
 # I. Git
 
 ```
-git是分布式版本控制系统。 什么是分布式？
+C：Hi vivienne，git是分布式版本控制系统。 什么是分布式？
 ```
 ##### 定义：
 * 分布式系统是若干独立计算机的集合。
@@ -16,7 +16,7 @@ git是分布式版本控制系统。 什么是分布式？
 * 分布式不等于并行计算。
   
 ```
-了解git的基本原理。
+C：Hey Vivienne，了解一下git的基本原理。
 ```
 ##### Git的由来
 * Github是一个开放源码的分布式控制系统，当初被开发，是为了替代Bitkeeper（遍布全球的Linux开发成员，用此作为源代码工具）。
@@ -42,7 +42,7 @@ git是分布式版本控制系统。 什么是分布式？
 * 推送提交Push Commits。
 
 ```
-学会用GUI界面操作，add、commit、push、brach、stash的用法。
+C：Vivienne，你今天要学会用GUI界面操作喔，add、commit、push、brach、stash的用法。
 ```
 * Add，是指在本地仓库里添加一个工程文件（txt、py）。
 * commit，是指在Gui里面写注释，push后会同步到github上的pull resquest里可见。
@@ -57,7 +57,7 @@ git是分布式版本控制系统。 什么是分布式？
 # Ⅱ. Front End
 
 ```
-了解浏览器基本原理
+C：Vivienne，了解一下浏览器基本原理。
 ```
 ##### 浏览器的主要构成
 * 浏览器由两部分组成：Shell+内核。
@@ -90,5 +90,5 @@ git是分布式版本控制系统。 什么是分布式？
 * 它是解析完一部分内容就显示一部分内容，同时，可能还在通过网络下载其余内容。（怪不得有时候部分东西加载不出来）
 
 ```
-html+css+javascript分别是什么？
+C：准备开始上手了喔，先了解html+css+javascript分别是什么？
 ```
