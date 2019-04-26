@@ -135,12 +135,59 @@ CSS的组成：
 selector {property: value}
 h1 { color: red; fonrt-size: 14px；}
 ```
-* 缩写。十六进制的颜色有CSS缩写
-* 引号。如果值为若干个单词，则要加引号。
-* 行。每行只描述一个属性，单条声明末尾加引号。
-* 分组。选择器可以分组，分享相同的声明。
+* 基本语法：
+  1. 缩写。十六进制的颜色有CSS缩写
+  2. 引号。如果值为若干个单词，则要加引号。
+  3. 行。每行只描述一个属性，单条声明末尾加引号。
+  4. 分组。选择器可以分组，分享相同的声明。
 ```
 h1,h2,h3,h4,h5,h6 {
   color: green;
   }
+```
+  5. 继承。子元素从父元素选择属性。
+* 选择器：
+  1. 派生选择器：依据元素位置的上下文关系来定义样式，目的使代码更简洁。
+```
+strong {
+  color: red;
+  }
+  
+h2 {
+  color: red;
+  }
+
+h2 strong {
+  color: blue;
+  }
+```
+  2. ID选择器：为标有「特定ID」的HTML元素，指定「特定样式」。常用于建立派生选择器。
+     /即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次。
+```
+# sidebar p {
+  front-style: italic;
+  text-align: right;
+  margin-top: 0.5em;
+  }
+# sidebar h2 {
+  font-size: 1em;
+  front-weight: normal;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5;
+  text-align: right;
+  }
+```
+  3. 类选择器：以「点号」显示，以一种「独立于文档元素」的方式来「指定样式」。
+```
+<head>
+<style type="text/css">
+.important {cololr:red}
+</style>
+</head>
+
+<body>
+<h1 class="important"> This heading is very important. </h1>
+<p class="important"> This paragraph is very important. </p>
+<p> This is a paragraph. </p>
 ```
