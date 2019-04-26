@@ -130,7 +130,7 @@ C：准备开始上手了喔，先了解html+css+javascript分别是什么？
 ```
 C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
 ```
-CSS的组成：
+##### CSS的组成：
 ```
 selector {property: value}
 h1 { color: red; fonrt-size: 14px；}
@@ -187,7 +187,7 @@ h2 strong {
 </head>
 
 <body>
-<h1 class="important"> This heading is very important. </h1>
-<p class="important"> This paragraph is very important. </p>
-<p> This is a paragraph. </p>
+<h1 class="important">This heading is very important.</h1>
+<p class="important">This paragraph is very important.</p>
+<p>This is a paragraph.</p>
 ```
