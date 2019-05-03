@@ -148,7 +148,7 @@ h1 { color: red; fonrt-size: 14px；}
   - 继承。子元素从父元素选择属性。
   
   
-* 选择器：
+* 选择器
   - 派生选择器：依据元素位置的上下文关系来定义样式，目的使代码更简洁。
   ```
   strong {
@@ -197,9 +197,10 @@ h1 { color: red; fonrt-size: 14px；}
   <p>This is a paragraph.</p>
   ```
  
-  - 属性选择器：为「拥有指定属性」的HTML元素设置样式，而不仅限于class和id属性.
-  - 只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。 
+  - 属性选择器：为「拥有指定属性」的HTML元素设置样式，而不仅限于class和id属性。 
   ```
+  只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。
+  
   为带有 title 属性的所有元素设置样式。
   <head>
   <style type="text/css">
