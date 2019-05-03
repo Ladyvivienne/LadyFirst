@@ -131,20 +131,20 @@ C：准备开始上手了喔，先了解html+css+javascript分别是什么？
 C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
 ```
 ##### CSS的组成：
-```
-selector {property: value}
-h1 { color: red; fonrt-size: 14px；}
-```
+  ```
+  selector {property: value}
+  h1 { color: red; fonrt-size: 14px；}
+  ```
 * 基本语法：
   - 缩写 - 十六进制的颜色有CSS缩写
   - 引号 - 如果值为若干个单词，则要加引号。
   - 行 - 每行只描述一个属性，单条声明末尾加引号。
   - 分组 - 选择器可以分组，分享相同的声明。
-    ```
-    h1,h2,h3,h4,h5,h6 {
-    color: green;
-    }
-    ```
+  ```
+  h1,h2,h3,h4,h5,h6 {
+  color: green;
+  }
+  ```
   - 继承 - 子元素从父元素选择属性。
   
   
