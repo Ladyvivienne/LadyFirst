@@ -167,7 +167,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
 
   - ID选择器：为标有「特定ID」的HTML元素，指定「特定样式」。常用于建立派生选择器。
   ```
-  即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次。
+  - 即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次。
   # sidebar p {
   front-style: italic;
   text-align: right;
@@ -185,7 +185,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   
   - 类选择器：以「点号」显示，以一种「独立于文档元素」的方式来「指定样式」。
   ```
-  将class指定为适当的值=归类，由此将「类选择器的样式」与元素关联。
+  - 将class指定为适当的值=归类，由此将「类选择器的样式」与元素关联。
   <head>
   <style type="text/css">
   .important {cololr:red}
@@ -200,9 +200,8 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
  
   - 属性选择器：为「拥有指定属性」的HTML元素设置样式，而不仅限于class和id属性。 
   ```
-  只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。
-  
-  为带有 title 属性的所有元素设置样式。
+  - 只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。
+  - 为带有 title 属性的所有元素设置样式。
   <head>
   <style type="text/css">
   [title]
@@ -223,13 +222,13 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   <h2>Hellow world</h2>
   <body>
   
-  为包含指定值的 title 属性的所有元素设置样式。适用于由空格分隔的属性值。
+  - 为包含指定值的 title 属性的所有元素设置样式。适用于由空格分隔的属性值。
   [title~=hello] {color:red;}
 
-  为带有包含指定值的 lang 属性的所有元素设置样式。适用于由连字符分隔的属性值。
+  - 为带有包含指定值的 lang 属性的所有元素设置样式。适用于由连字符分隔的属性值。
   [lang|=en] { color:red; }
 
-  为不带有class或id的表单设置样式。
+  - 为不带有class或id的表单设置样式。
   <head>
   <style>
   input[type="text"]
