@@ -130,6 +130,13 @@ C：准备开始上手了喔，先了解html+css+javascript分别是什么？
 ```
 C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
 ```
+  
+  <br />
+  <br />
+  <br />
+  
+# Ⅲ. CSS
+
 ##### CSS的组成：
   
 * 基本语法：
@@ -167,7 +174,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
 
   - ID选择器：为标有「特定ID」的HTML元素，指定「特定样式」。常用于建立派生选择器。
   ```
-  - 即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次。
+  /*即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次。*/
   # sidebar p {
   front-style: italic;
   text-align: right;
@@ -185,7 +192,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   
   - 类选择器：以「点号」显示，以一种「独立于文档元素」的方式来「指定样式」。
   ```
-  - 将class指定为适当的值=归类，由此将「类选择器的样式」与元素关联。
+  /*将class指定为适当的值=归类，由此将「类选择器的样式」与元素关联。*/
   <head>
   <style type="text/css">
   .important {cololr:red}
@@ -200,8 +207,8 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
  
   - 属性选择器：为「拥有指定属性」的HTML元素设置样式，而不仅限于class和id属性。 
   ```
-  - 只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。
-  - 为带有 title 属性的所有元素设置样式。
+  /*只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。*/
+  /*为带有 title 属性的所有元素设置样式。*/
   <head>
   <style type="text/css">
   [title]
@@ -222,13 +229,13 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   <h2>Hellow world</h2>
   <body>
   
-  - 为包含指定值的 title 属性的所有元素设置样式。适用于由空格分隔的属性值。
+  /*为包含指定值的 title 属性的所有元素设置样式。适用于由空格分隔的属性值。*/
   [title~=hello] {color:red;}
 
-  - 为带有包含指定值的 lang 属性的所有元素设置样式。适用于由连字符分隔的属性值。
+  /*为带有包含指定值的 lang 属性的所有元素设置样式。适用于由连字符分隔的属性值。*/
   [lang|=en] { color:red; }
 
-  - 为不带有class或id的表单设置样式。
+  /*为不带有class或id的表单设置样式。*/
   <head>
   <style>
   input[type="text"]
@@ -263,9 +270,9 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
 * 插入样式表
   - 外部样式表
   ```
-  - 应用于很多页面。
-  - 通过改变一个文件，来改变整个站点的外观。
-  - 每个页面使用<link>标签链接到样式表。<link>标签在（文档的）头部。 
+  /*应用于很多页面。*/ 
+  /*通过改变一个文件，来改变整个站点的外观。*/
+  /*每个页面使用<link>标签链接到样式表。<link>标签在（文档的）头部。*/  
   <head>
   <link rel="stylesheet" type="text/css" href="theme.css" />
   </head>
@@ -276,8 +283,8 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   
   - 内部样式表
   ```
-  - 当单个文档需要特殊的样式时，就使用内部样式表。
-  - 使用<style>标签在文档头部定义内部样式表。 
+  /*当单个文档需要特殊的样式时，就使用内部样式表。*/ 
+  /*使用<style>标签在文档头部定义内部样式表。*/ 
   <head>
   <style type="text/css">
   hr {color: sienna;}
@@ -286,3 +293,30 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   </style>
   </head>  
   ```
+
+##### CSS样式：
+* CSS背景：可以用纯色或图像作为背景。
+  - 背景色：使用「 background-color 」属性设置。
+  ```
+  /*设置背景色*/：
+  P {background-color: gray;}
+  
+  /*设置背景色后作一点延伸*/：
+  p {background-color: gray; padding: 20px;}
+  
+  /*所有元素都可以设置背景色，从body到em和a等行内元素。*/
+  /*background-color不能继承，默认值是transparent。*/
+  ```
+  
+  - 背景图像：使用「 background-image 」属性设置。默认值是 none，表示背景上没有放置任何图像。
+  ```
+  /*设置背景图像前，要先为这个属性设置一个URL值*/
+  body {background-image: url(/i/eg_bg_04.gif);}
+  
+  /*设置body元素以外的背景，如以下是对段落的设置*/
+  p.flower {background-image: url(/i/eg_bg_03.gif);}
+  
+  /*设置行内元素的背景图像，如以下是对链接的设置*/
+  a.radio {background-image: url(/i/eg_bg_07.gif);}
+  
+  
