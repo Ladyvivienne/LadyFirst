@@ -135,6 +135,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   selector {property: value}
   h1 { color: red; fonrt-size: 14px；}
   ```
+  
 * 基本语法：
   - 缩写 - 十六进制的颜色有CSS缩写
   - 引号 - 如果值为若干个单词，则要加引号。
