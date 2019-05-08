@@ -151,7 +151,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   ```
   h1,h2,h3,h4,h5,h6
     {
-    color: green;
+      color: green;
     }
   ```
   - 继承 - 子元素从父元素选择属性。
@@ -162,17 +162,17 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   ```
   strong
     {
-    color: red;
+      color: red;
     }
   
   h2
     {
-    color: red;
+      color: red;
     }
 
   h2 strong
     {
-    color: blue;
+      color: blue;
     }
   ```
 
@@ -181,19 +181,19 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次*/
   # sidebar p 
     {
-    front-style: italic;
-    text-align: right;
-    margin-top: 0.5em;
+      front-style: italic;
+      text-align: right;
+      margin-top: 0.5em;
     }
     
   # sidebar h2 
     {
-    font-size: 1em;
-    front-weight: normal;
-    font-style: italic;
-    margin: 0;
-    line-height: 1.5;
-    text-align: right;
+      font-size: 1em;
+      front-weight: normal;
+      font-style: italic;
+      margin: 0;
+      line-height: 1.5;
+      text-align: right;
     }
   ```
   
@@ -220,7 +220,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   <style type="text/css">
   [title]
     {
-    color:red;
+      color:red;
     }
   </style>
   <head>
@@ -247,19 +247,19 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   <style>
   input[type="text"]
     {
-    width:150px;
-    display:block;
-    margin-bottom:10px;
-    background-color:yellow;
-    font-family: Verdana, Arial;
+      width:150px;
+      display:block;
+      margin-bottom:10px;
+      background-color:yellow;
+      font-family: Verdana, Arial;
     }
 
   input[type="button"]
     {
-    width:120px;
-    margin-left:35px;
-    display:block;
-    font-family: Verdana, Arial;
+      width:120px;
+      margin-left:35px;
+      display:block;
+      font-family: Verdana, Arial;
     }
   </style>
   </head>
@@ -284,8 +284,8 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   <link rel="stylesheet" type="text/css" href="theme.css" />
   </head>
 
-  /*外部样式表可以在任何文本编辑器中进行编辑。不能包含任何html标签，样式表应该以.css扩展名进行保存。
-  /*不要再属性值与单位之间留有空格。
+  /*外部样式表可以在任何文本编辑器中进行编辑。不能包含任何html标签，样式表应该以.css扩展名进行保存*/
+  /*不要再属性值与单位之间留有空格*/
   ```
   
   - 内部样式表
@@ -334,8 +334,8 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*背景图像默认从左上角开始平铺*/
   body
     { 
-    background-image: url(/i/eg_bg_03.gif);
-    background-repeat: repeat-y;
+      background-image: url(/i/eg_bg_03.gif);
+      background-repeat: repeat-y;
     }
   ```
   
@@ -344,9 +344,9 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*以下是使一个背景图像居中*/
   body
     { 
-    background-image:url('/i/eg_bg_03.gif');
-    background-repeat:no-repeat;
-    background-position:center;
+      background-image:url('/i/eg_bg_03.gif');
+      background-repeat:no-repeat;
+      background-position:center;
     }
   
   /*关键词*/
@@ -358,17 +358,17 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*以下是使一个图像居中，百分数值同时应用于元素和图像*/
   body
     { 
-    background-image:url('/i/eg_bg_03.gif');
-    background-repeat:no-repeat;
-    background-position:50% 50%;
+      background-image:url('/i/eg_bg_03.gif');
+      background-repeat:no-repeat;
+      background-position:50% 50%;
     }
   /*如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为 50%/
   /*以下是把图像放在水平方向 2/3、垂直方向 1/3 处*/
   body
     { 
-    background-image:url('/i/eg_bg_03.gif');
-    background-repeat:no-repeat;
-    background-position:66% 33%;
+      background-image:url('/i/eg_bg_03.gif');
+      background-repeat:no-repeat;
+      background-position:66% 33%;
     }
 
   /*长度值*/
@@ -376,9 +376,9 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*以下是把图像的左上角置于元素内「边距区」左上角向右 50 像素、向下 100 像素*/
   body
     { 
-    background-image:url('/i/eg_bg_03.gif');
-    background-repeat:no-repeat;
-    background-position:50px 100px;
+      background-image:url('/i/eg_bg_03.gif');
+      background-repeat:no-repeat;
+      background-position:50px 100px;
     }
   /*偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐*/
    ```
