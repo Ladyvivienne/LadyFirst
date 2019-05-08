@@ -150,9 +150,9 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   - 分组 - 选择器可以分组，分享相同的声明。
   ```
   h1,h2,h3,h4,h5,h6
-    {
-      color: green;
-    }
+  {
+    color: green;
+  }
   ```
   - 继承 - 子元素从父元素选择属性。
   
@@ -161,40 +161,40 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   - 派生选择器：依据元素位置的上下文关系来定义样式，目的使代码更简洁。
   ```
   strong
-    {
-      color: red;
-    }
+  {
+    color: red;
+  }
   
   h2
-    {
-      color: red;
-    }
+  {
+    color: red;
+  }
 
   h2 strong
-    {
-      color: blue;
-    }
+  {
+    color: blue;
+  }
   ```
 
   - ID选择器：为标有「特定ID」的HTML元素，指定「特定样式」。常用于建立派生选择器。
   ```
   /*即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次*/
   # sidebar p 
-    {
-      front-style: italic;
-      text-align: right;
-      margin-top: 0.5em;
-    }
+  {
+    front-style: italic;
+    text-align: right;
+    margin-top: 0.5em;
+  }
     
   # sidebar h2 
-    {
-      font-size: 1em;
-      front-weight: normal;
-      font-style: italic;
-      margin: 0;
-      line-height: 1.5;
-      text-align: right;
-    }
+  {
+    font-size: 1em;
+    front-weight: normal;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+    text-align: right;
+  }
   ```
   
   - 类选择器：以「点号」显示，以一种「独立于文档元素」的方式来「指定样式」。
@@ -219,9 +219,9 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   <head>
   <style type="text/css">
   [title]
-    {
-      color:red;
-    }
+  {
+    color:red;
+  }
   </style>
   <head>
 
@@ -246,21 +246,21 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   <head>
   <style>
   input[type="text"]
-    {
-      width:150px;
-      display:block;
-      margin-bottom:10px;
-      background-color:yellow;
-      font-family: Verdana, Arial;
-    }
+  {
+    width:150px;
+    display:block;
+    margin-bottom:10px;
+    background-color:yellow;
+    font-family: Verdana, Arial;
+  }
 
   input[type="button"]
-    {
-      width:120px;
-      margin-left:35px;
-      display:block;
-      font-family: Verdana, Arial;
-    }
+  {
+    width:120px;
+    margin-left:35px;
+    display:block;
+    font-family: Verdana, Arial;
+  }
   </style>
   </head>
   <body>
@@ -333,21 +333,21 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*no-repeat 则不允许图像在任何方向上平铺*/
   /*背景图像默认从左上角开始平铺*/
   body
-    { 
-      background-image: url(/i/eg_bg_03.gif);
-      background-repeat: repeat-y;
-    }
+  { 
+    background-image: url(/i/eg_bg_03.gif);
+    background-repeat: repeat-y;
+  }
   ```
   
   - 背景定位：使用「 background-position」属性设置,改变图像在背景的位置。
   ```
   /*以下是使一个背景图像居中*/
   body
-    { 
-      background-image:url('/i/eg_bg_03.gif');
-      background-repeat:no-repeat;
-      background-position:center;
-    }
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+  }
   
   /*关键词*/
   /*定位值有许多关键字，如top、bottom、left、right 和 center*/
@@ -357,29 +357,29 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*百分数值*/
   /*以下是使一个图像居中，百分数值同时应用于元素和图像*/
   body
-    { 
-      background-image:url('/i/eg_bg_03.gif');
-      background-repeat:no-repeat;
-      background-position:50% 50%;
-    }
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+  }
   /*如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为 50%/
   /*以下是把图像放在水平方向 2/3、垂直方向 1/3 处*/
   body
-    { 
-      background-image:url('/i/eg_bg_03.gif');
-      background-repeat:no-repeat;
-      background-position:66% 33%;
-    }
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:66% 33%;
+  }
 
   /*长度值*/
   /*长度值，指元素内「边距区」左上角的偏移，偏移点是图像的左上角*/
   /*以下是把图像的左上角置于元素内「边距区」左上角向右 50 像素、向下 100 像素*/
   body
-    { 
-      background-image:url('/i/eg_bg_03.gif');
-      background-repeat:no-repeat;
-      background-position:50px 100px;
-    }
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:50px 100px;
+  }
   /*偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐*/
    ```
   
