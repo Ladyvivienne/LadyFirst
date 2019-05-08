@@ -384,3 +384,16 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐*/
    ```
   
+  - 背景锁定：使文档向下滚动时，背景图像不受影响，即锁定背景。
+  ```
+  body
+  {
+    background-image:url(/i/eg_bg_02.gif);
+    background-repeat:no-repeat;
+    background-attachment:fixed
+  }
+  
+  /*background-attachment 属性的默认值是scroll，意指在默认情况下，背景会随文档滚动。
+  ```
+
+* CSS文本：
