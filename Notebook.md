@@ -393,7 +393,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
     background-attachment:fixed
   }
   
-  /*background-attachment 属性的默认值是scroll，意指在默认情况下，背景会随文档滚动。
+  /*background-attachment 属性的默认值是scroll，意指在默认情况下，背景会随文档滚动。*/
   ```
 
 * CSS文本：
