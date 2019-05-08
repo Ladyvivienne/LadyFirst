@@ -362,6 +362,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
     background-repeat:no-repeat;
     background-position:50% 50%;
   }
+  
   /*如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为 50%/
   /*以下是把图像放在水平方向 2/3、垂直方向 1/3 处*/
   body
@@ -380,6 +381,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
     background-repeat:no-repeat;
     background-position:50px 100px;
   }
+  
   /*偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐*/
    ```
   
