@@ -422,8 +422,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   - 水平对齐：使用「text-align」属性设置一个元素中的文本行互相之间的对齐方式，默认值是left。（希伯来语和阿拉伯语之类的语言，默认值是right）
   1. 「text-align: center」与「CENTER」不同。前者不会控制元素的对齐，只影响内部内容，使文本受影响，后者会把整个元素居中。
   2. 「justify」是使两端对齐。
-  
-  
+    <br />
   - 字间隔：使用「word-spacing」属性设置，默认值是normal即为设置值0。设置正长度为增加间隔，负值为拉近。
   ```
   p. spread {word-spacing: 30px;}
