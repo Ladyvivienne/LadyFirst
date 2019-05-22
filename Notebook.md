@@ -431,6 +431,38 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   p.tight {word-spacing: -0.5em;}
   ```
   
+  - 字母间隔：使用「letter-spacing」属性设置，修改的是字符或字母之间的间隔。（语法跟字间隔一样）
+    
+    <br />
+   
+   - 字符转换：使用「text-transform」属性处理文本的大小写。
+   1. 拥有四个值分别是：none、uppercase（大写）、loswercase（小写）、capitalize（首字母大写）。
+   ```
+   h1 {text-transform: uppercase}
+   ```
+  
+    <br />
+   
+   - 文本装饰：使用「text-decoration」属性。
+   1. 拥有5个值分别是：none、underline、overline、line-through、blink（文本闪烁）。
+   2. none值会关闭原本应用到一个元素上的所有装饰。
+   ```
+   /*多种装饰*/
+   a:link a:visited {text-decoration: underline overline;}
+   
+   /*两个不同的装饰都与同一元素匹配时，胜出的值会替代另一个*/
+   h2.stricken {text-decoration: line-through;}
+   h2 {text-decoration: underline overline;}
+   ```
+   
+    <br />
+     
+   - 处理空白符：使用「white-space」属性进行空格、换行和tab字符的处理。
+   1. XHTML默认将所有空白符，合并为一个空格；回车也会转换成空格。
+  ```
+  p {white-space: normal;}
+  ```
+   2. 拥有4个值分别是：pre（不合并空白符，保留换行符）、nowrap（合并空白符，防止换行）、prew-arap(不合并空白符，保留换行符且自动换行，）、pre-line（合并空白符，保留换行符且自动换行）
   
   
   
