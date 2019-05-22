@@ -431,6 +431,8 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   p.tight {word-spacing: -0.5em;}
   ```
   
+    <br />
+    
   - 字母间隔：使用「letter-spacing」属性设置，修改的是字符或字母之间的间隔。（语法跟字间隔一样）
     
     <br />
