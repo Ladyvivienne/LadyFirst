@@ -4,6 +4,8 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
 
 # CSS的组成
   
+  </br>
+    
 ### 基本语法
   ```
   selector {property: value}
@@ -21,9 +23,10 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   ```
   - 继承 - 子元素从父元素选择属性。
   
- ---
+  </br>
   
 ### 选择器
+
   * 派生选择器：依据元素位置的上下文关系来定义样式，目的使代码更简洁。
   ```
   strong
@@ -145,8 +148,9 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
     </form>
     </body>
     ```  
-  ---
-
+  
+  </br>
+  
 ### 插入样式表
   * 外部样式表
     - 应用于很多页面。
@@ -173,11 +177,14 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
     </style>
     </head>  
     ```
----
-
+  ---
+  
+  </br>
+  
 # CSS样式
 
 ### CSS背景：可以用纯色或图像作为背景；但所有背景属性都不能继承。
+
   * 背景色：使用「 background-color 」属性设置。
   ```
   /*设置背景色*/
@@ -261,9 +268,9 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
       background-repeat:no-repeat;
       background-position:50px 100px;
     }
-  
-   - 偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐。
-     ```
+    ```
+    - 偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐。
+     
   
   * 背景锁定：使文档向下滚动时，背景图像不受影响，即锁定背景。
     ```
@@ -274,123 +281,109 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
     background-attachment:fixed
     }
     ```
-   - background-attachment 属性的默认值是scroll，意指在默认情况下，背景会随文档滚动。
-
----
-
+    - background-attachment 属性的默认值是scroll，意指在默认情况下，背景会随文档滚动。
+  
+  </br>
+  
 ### CSS文本：定义文本的外观，包括颜色、字符间距、对齐、装饰、缩进等。
-  - 缩进文本：使用「text-indent」属性设置，实现文本缩进。所有元素的第一行都可以缩进一个给定的长度，该长度甚至可以是负值。
-  ```
-  p {text-indent; 5em;}
-  /*无法对行内元素、图像之类的替换元素应用*/
-  /*如果一个块级元素的首行有一个图像，它会随该行的其余文本移动*/
-  /*如果想把一个行内元素的第一行缩进，可以用左内边距或外边距创造这种效果*/
-  
-  /*设置负值*/
-  p {text-indent; -5em;}
-  /*可以实现很多有趣效果，比如“悬挂缩进”*/
-  /*对段落设置负值后，首行某些文本可能超出浏览器窗口的左边界，建议设置外边距或内边距*/
-  p {text-indent: -5em; padding-left: 5em;}
-  
-  /*使用百分值*/
-  /*百分值要相对于缩进元素父元素的宽度。如果缩进值设置为20%，所影响元素的第一行会缩进其父元素宽度的20%*/
-  div {width: 500px;}
-  p {text-indent:20%}
-  
-  /*继承*/
-  /*text-indent属性可以继承*/
-  ```
-  
-  - 水平对齐：使用「text-align」属性设置一个元素中的文本行互相之间的对齐方式，默认值是left。（希伯来语和阿拉伯语之类的语言，默认值是right）
-  1. 「text-align: center」与「CENTER」不同。前者不会控制元素的对齐，只影响内部内容，使文本受影响，后者会把整个元素居中。
-  2. 「justify」是使两端对齐。
-  
-    <br />
+
+  * 缩进文本：使用「text-indent」属性设置，实现文本缩进。
+    - 所有元素的第一行都可以缩进一个给定的长度，该长度甚至可以是负值。
+    ```
+    p {text-indent; 5em;}
+    ```
+    - 无法对行内元素、图像之类的替换元素应用。
+    - 如果一个块级元素的首行有一个图像，它会随该行的其余文本移动。
+    - 如果想把一个行内元素的第一行缩进，可以用左内边距或外边距创造这种效果。
+    - 设置负值
+    ```
+    p {text-indent; -5em;}
+    ```
+    - 可以实现很多有趣效果，比如“悬挂缩进”。
+    - 对段落设置负值后，首行某些文本可能超出浏览器窗口的左边界，建议设置外边距或内边距。
+    ```
+    p {text-indent: -5em; padding-left: 5em;}
+    ```
+    - 使用百分值
+    - 百分值要相对于缩进元素父元素的宽度。如果缩进值设置为20%，所影响元素的第一行会缩进其父元素宽度的20%。
+    ```
+    div {width: 500px;}
+    p {text-indent:20%}
+    ```
     
-  - 字间隔：使用「word-spacing」属性设置，默认值是normal即为设置值0。设置正长度为增加间隔，负值为拉近。
-  ```
-  p. spread {word-spacing: 30px;}
-  p.tight {word-spacing: -0.5em;}
-  ```
+  * 继承: text-indent属性可以继承。
   
-    <br />
-    
-  - 字母间隔：使用「letter-spacing」属性设置，修改的是字符或字母之间的间隔。（语法跟字间隔一样）
-    
-    <br />
-   
-   - 字符转换：使用「text-transform」属性处理文本的大小写。
-   1. 拥有四个值分别是：none、uppercase（大写）、loswercase（小写）、capitalize（首字母大写）。
-   ```
-   h1 {text-transform: uppercase}
-   ```
+  * 水平对齐：使用「text-align」属性设置一个元素中的文本行互相之间的对齐方式。
+    - 默认值是left。（希伯来语和阿拉伯语之类的语言，默认值是right）
+    -「text-align: center」与「CENTER」不同。前者不会控制元素的对齐，只影响内部内容，使文本受影响，后者会把整个元素居中。
+    -「justify」是使两端对齐。
+
+  * 字间隔：使用「word-spacing」属性设置，默认值是normal即为设置值0。设置正长度为增加间隔，负值为拉近。
+    ```
+    p. spread {word-spacing: 30px;}
+    p.tight {word-spacing: -0.5em;}
+    ```
+ 
+  * 字母间隔：使用「letter-spacing」属性设置，修改的是字符或字母之间的间隔。（语法跟字间隔一样）
   
-    <br />
+  * 字符转换：使用「text-transform」属性处理文本的大小写。
+  
+    - 拥有四个值分别是：none、uppercase（大写）、loswercase（小写）、capitalize（首字母大写）。
+    ```
+    h1 {text-transform: uppercase}
+    ```
    
-   - 文本装饰：使用「text-decoration」属性。
-   1. 拥有5个值分别是：none、underline、overline、line-through、blink（文本闪烁）。
-   2. none值会关闭原本应用到一个元素上的所有装饰。
+  * 文本装饰：使用「text-decoration」属性。
+    - 拥有5个值分别是：none、underline、overline、line-through、blink（文本闪烁）。
+    - none值会关闭原本应用到一个元素上的所有装饰。
+    ```
+    /*多种装饰*/
+    a:link a:visited {text-decoration: underline overline;}
+   
+    /*两个不同的装饰都与同一元素匹配时，胜出的值会替代另一个*/
+    h2.stricken {text-decoration: line-through;}
+    h2 {text-decoration: underline overline;}
+    ```
+
+  * 处理空白符：使用「white-space」属性进行空格、换行和tab字符的处理。
+   - XHTML默认将所有空白符，合并为一个空格；回车也会转换成空格。
    ```
-   /*多种装饰*/
-   a:link a:visited {text-decoration: underline overline;}
-   
-   /*两个不同的装饰都与同一元素匹配时，胜出的值会替代另一个*/
-   h2.stricken {text-decoration: line-through;}
-   h2 {text-decoration: underline overline;}
+    p {white-space: normal;}
    ```
-   
-    <br />
-     
-   - 处理空白符：使用「white-space」属性进行空格、换行和tab字符的处理。
-   1. XHTML默认将所有空白符，合并为一个空格；回车也会转换成空格。
-  ```
-  p {white-space: normal;}
-  ```
-   2. 拥有4个值分别是：pre（不合并空白符，保留换行符）、nowrap（合并空白符，防止换行）、prew-arap(不合并空白符，保留换行符且自动换行，）、pre-line（合并空白符，保留换行符且自动换行）
-   
-    <br />
-      
-   * CSS字体：定义文本的字体系列、大小、加粗、风斜（如斜体）和变形（如小型大写字母）。
-   1. 通用字体系列 - 拥有相似外观的字体系统组合：Serif、Sans-serif、Monospace、Cursive、Fantasy
-   2. 特定字体系列 - 具体的字体系列 （如"Times"）
-   
-    <br />
-      
+   - 拥有4个值分别是：pre（不合并空白符，保留换行符）、nowrap（合并空白符，防止换行）、prew-arap(不合并空白符，保留换行符且自动换行，）、pre-line（合并空白符，保留换行符且自动换行）。
+
+  * CSS字体：定义文本的字体系列、大小、加粗、风斜（如斜体）和变形（如小型大写字母）。
+   ```
+   - 通用字体系列 - 拥有相似外观的字体系统组合：Serif、Sans-serif、Monospace、Cursive、Fantasy
+   - 特定字体系列 - 具体的字体系列 （如"Times"）
+   ```
    - 指定字体系列：使用「font-family」属性定义文本的字体系列。
-   1. 如果用户代理上没有安装指定的字体，则显示用户代理的默认字体。
-   2. 可以通过一次设置候选字体，不限数目，按照优先顺序排列，用逗号衔接，让用户代理按顺序找到能用的字体。
+   - 如果用户代理上没有安装指定的字体，则显示用户代理的默认字体。
+   - 可以通过一次设置候选字体，不限数目，按照优先顺序排列，用逗号衔接，让用户代理按顺序找到能用的字体。
    ```
    p {font-family: Times, Georgia, serif;}
    ```
-   3. 当字体名中有一个或以上的空格，或者包含#或$等符号，就需要被加上引号。
-   
-    <br />
-      
-   - 字体风格：使用「font-style」属性，通常用于规定斜体文本。
-   1. 拥有三个值分别是：normal、italic、oblique（竖直文本的倾斜版本）。后二者在web浏览器上看上去完全一样。
-   
-    <br />
-    
-    - 字体变形：使用「font-variant」属性设定小型大写字母。
-    ```
-    p{font-variant:small-caps;}
-    ```
-     
-    <br />
-    
-   - 字体加粗：使用「font-weight」属性设置文本的粗细。
-   1. 加粗度分为9级，从100=900。（Normal=400，Bold=700）
-   2. 设置「bolder」时，显示的字体将会比其继承值更粗。
-     
-    <br />
-    
-    - 字体大小：使用「font-size」属性设置文本大小。
-    1. 可以设置为绝对值和相对值。
-    2. 普通文本（如段落）的默认大小是16像素（16px=1em）。
-    3. 可以使用em单位替代pixels。
-    4. 结合使用百分比和EM为常用手段。
-    ```
-    body {font-size:100%;}
-    h1{font-size:3/75em;}
-    p{font-size:0.875em;}
+   - 当字体名中有一个或以上的空格，或者包含#或$等符号，就需要被加上引号。
+
+  * 字体风格：使用「font-style」属性，通常用于规定斜体文本。
+   - 拥有三个值分别是：normal、italic、oblique（竖直文本的倾斜版本）。后二者在web浏览器上看上去完全一样。
+   - 字体变形：使用「font-variant」属性设定小型大写字母。
+   ```
+   p{font-variant:small-caps;}
+   ```
+
+  * 字体加粗：使用「font-weight」属性设置文本的粗细。
+   - 加粗度分为9级，从100=900。（Normal=400，Bold=700）
+   - 设置「bolder」时，显示的字体将会比其继承值更粗。
+
+  * 字体大小：使用「font-size」属性设置文本大小。
+   - 可以设置为绝对值和相对值。
+   - 普通文本（如段落）的默认大小是16像素（16px=1em）。
+   - 可以使用em单位替代pixels。
+   - 结合使用百分比和EM为常用手段。
+   ```
+   body {font-size:100%;}
+   h1{font-size:3/75em;}
+   p{font-size:0.875em;}
+   ```
   
