@@ -1,18 +1,197 @@
-##### CSS样式：
-* CSS背景：可以用纯色或图像作为背景；但所有背景属性都不能继承。
-  - 背景色：使用「 background-color 」属性设置。
+```
+C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
+```
+
+# CSS的组成
+  
+### 基本语法
   ```
-  /*设置背景色*/：
+  selector {property: value}
+  h1 { color: red; fonrt-size: 14px；}
+  ```
+  * 缩写 - 十六进制的颜色有CSS缩写
+  * 引号 - 如果值为若干个单词，则要加引号。
+  * 行 - 每行只描述一个属性，单条声明末尾加引号。
+  * 分组 - 选择器可以分组，分享相同的声明。
+  ```
+  h1,h2,h3,h4,h5,h6
+  {
+    color: green;
+  }
+  ```
+  - 继承 - 子元素从父元素选择属性。
+  
+ ---
+  
+### 选择器
+  * 派生选择器：依据元素位置的上下文关系来定义样式，目的使代码更简洁。
+  ```
+  strong
+  {
+    color: red;
+  }
+  
+  h2
+  {
+    color: red;
+  }
+
+  h2 strong
+  {
+    color: blue;
+  }
+  ```
+
+  * ID选择器：为标有「特定ID」的HTML元素，指定「特定样式」。常用于建立派生选择器。
+    - 即使ID只能在每个HTML文档中出现一次，但它作为派生选择器，可以被使用很多次。
+  ```
+  # sidebar p 
+  {
+    front-style: italic;
+    text-align: right;
+    margin-top: 0.5em;
+  }
+    
+  # sidebar h2 
+  {
+    font-size: 1em;
+    front-weight: normal;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+    text-align: right;
+  }
+  ```
+  
+  * 类选择器：以「点号」显示，以一种「独立于文档元素」的方式来「指定样式」。
+    - 将class指定为适当的值=归类，由此将「类选择器的样式」与元素关联。
+  ```
+  <head>
+  <style type="text/css">
+  .important {cololr:red}
+  </style>
+  </head>
+
+  <body>
+  <h1 class="important">This heading is very important.</h1>
+  <p class="important">This paragraph is very important.</p>
+  <p>This is a paragraph.</p>
+  ```
+ 
+  * 属性选择器：为「拥有指定属性」的HTML元素设置样式，而不仅限于class和id属性。 
+    - 只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。
+    - 为带有 title 属性的所有元素设置样式。
+  ```
+  <head>
+  <style type="text/css">
+  [title]
+  {
+    color:red;
+  }
+  </style>
+  <head>
+
+  <body>
+  <h1>可以应用样式：</h1>
+  <h2 title="Hello world">Hello world</h2>
+  <a title="Vivienne's dream">Vivienne's dream</a>
+
+  <hr />
+
+  <h1>无法应用样式：</h1>
+  <h2>Hellow world</h2>
+  <body>
+  ```
+   
+    - 为包含指定值的 title 属性的所有元素设置样式。适用于由空格分隔的属性值。
+  ```
+  [title~=hello] {color:red;}
+  ```
+  
+    - 为带有包含指定值的 lang 属性的所有元素设置样式。适用于由连字符分隔的属性值。
+  ```
+  [lang|=en] { color:red; }
+  ```
+  
+    - 为不带有class或id的表单设置样式。
+  ```
+  <head>
+  <style>
+  input[type="text"]
+  {
+    width:150px;
+    display:block;
+    margin-bottom:10px;
+    background-color:yellow;
+    font-family: Verdana, Arial;
+  }
+
+  input[type="button"]
+  {
+    width:120px;
+    margin-left:35px;
+    display:block;
+    font-family: Verdana, Arial;
+  }
+  </style>
+  </head>
+  <body>
+
+  <form name="input" action="" method="get">
+  <input type="text" name="Name" value="Bill" size="20">
+  <input type="text" name="Name" value="Gates" size="20">
+  <input type="button" value="Example Button">
+
+  </form>
+  </body>
+  ```
+  
+  ---
+
+### 插入样式表
+  * 外部样式表
+    - 应用于很多页面。
+    - 通过改变一个文件，来改变整个站点的外观。
+    - 每个页面使用<link>标签链接到样式表。<link>标签在（文档的）头。
+  ```
+  <head>
+  <link rel="stylesheet" type="text/css" href="theme.css" />
+  </head>
+  ```
+    - 外部样式表可以在任何文本编辑器中进行编辑。不能包含任何html标签，样式表应该以.css扩展名进行保存。
+    - 不要再属性值与单位之间留有空格。
+  
+  * 内部样式表
+    -当单个文档需要特殊的样式时，就使用内部样式表。
+    -使用<style>标签在文档头部定义内部样式表。
+  ```
+  <head>
+  <style type="text/css">
+  hr {color: sienna;}
+  p {margin-lift:20px}
+  body {background-image: url("images/back40.gif");}
+  </style>
+  </head>  
+  ```
+
+---
+
+### CSS样式
+
+  *CSS背景：可以用纯色或图像作为背景；但所有背景属性都不能继承。
+    - 背景色：使用「 background-color 」属性设置。
+  ```
+  /*设置背景色*/
   P {background-color: gray;}
   
-  /*设置背景色后作一点延伸*/：
+  /*设置背景色后作一点延伸*/
   p {background-color: gray; padding: 20px;}
   
   /*所有元素都可以设置背景色，从body到em和a等行内元素*/
   /*background-color不能继承，默认值是transparent。*/
   ```
   
-  - 背景图像：使用「 background-image 」属性设置。默认值是 none，表示背景上没有放置任何图像。
+    - 背景图像：使用「 background-image 」属性设置。默认值是 none，表示背景上没有放置任何图像。
   ```
   /*设置背景图像前，要先为这个图像属性设置一个URL值*/
   body {background-image: url(/i/eg_bg_04.gif);}
