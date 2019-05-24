@@ -81,71 +81,70 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   * 属性选择器：为「拥有指定属性」的HTML元素设置样式，而不仅限于class和id属性。 
     - 只有规定了 !DOCTYPE时，IE7和IE8才支持属性选择器。
     - 为带有 title 属性的所有元素设置样式。
-  ```
-  <head>
-  <style type="text/css">
-  [title]
-  {
+    ```
+    <head>
+    <style type="text/css">
+    [title]
+    {
     color:red;
-  }
-  </style>
-  <head>
+    }
+    </style>
+    <head>
 
-  <body>
-  <h1>可以应用样式：</h1>
-  <h2 title="Hello world">Hello world</h2>
-  <a title="Vivienne's dream">Vivienne's dream</a>
+    <body>
+    <h1>可以应用样式：</h1>
+    <h2 title="Hello world">Hello world</h2>
+    <a title="Vivienne's dream">Vivienne's dream</a>
 
-  <hr />
+    <hr />
 
-  <h1>无法应用样式：</h1>
-  <h2>Hellow world</h2>
-  <body>
-  ```
-   
+    <h1>无法应用样式：</h1>
+    <h2>Hellow world</h2>
+    <body>
+    ```
+  
     - 为包含指定值的 title 属性的所有元素设置样式。适用于由空格分隔的属性值。
-  ```
-  [title~=hello] {color:red;}
-  ```
+    ```
+    [title~=hello] {color:red;}
+    ```
   
     - 为带有包含指定值的 lang 属性的所有元素设置样式。适用于由连字符分隔的属性值。
-  ```
-  [lang|=en] { color:red; }
-  ```
+    ```
+    [lang|=en] { color:red; }
+    ```
   
     - 为不带有class或id的表单设置样式。
-  ```
-  <head>
-  <style>
-  input[type="text"]
-  {
-    width:150px;
-    display:block;
-    margin-bottom:10px;
-    background-color:yellow;
-    font-family: Verdana, Arial;
-  }
+    ```
+    <head>
+    <style>
+    input[type="text"]
+    {
+      width:150px;
+      display:block;
+      margin-bottom:10px;
+      background-color:yellow;
+      font-family: Verdana, Arial;
+    }
 
-  input[type="button"]
-  {
-    width:120px;
-    margin-left:35px;
-    display:block;
-    font-family: Verdana, Arial;
-  }
-  </style>
-  </head>
-  <body>
+    input[type="button"]
+    {
+      width:120px;
+      margin-left:35px;
+      display:block;
+      font-family: Verdana, Arial;
+    }
+    </style>
+    </head>
+    <body>
 
-  <form name="input" action="" method="get">
-  <input type="text" name="Name" value="Bill" size="20">
-  <input type="text" name="Name" value="Gates" size="20">
-  <input type="button" value="Example Button">
+    <form name="input" action="" method="get">
+    <input type="text" name="Name" value="Bill" size="20">
+    <input type="text" name="Name" value="Gates" size="20">
+    <input type="button" value="Example Button">
 
-  </form>
-  </body>
-  ```
-  
+    </form>
+    </body>
+    ```  
   ---
 
 ### 插入样式表
@@ -153,33 +152,33 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
     - 应用于很多页面。
     - 通过改变一个文件，来改变整个站点的外观。
     - 每个页面使用<link>标签链接到样式表。<link>标签在（文档的）头。
-  ```
-  <head>
-  <link rel="stylesheet" type="text/css" href="theme.css" />
-  </head>
-  ```
+    ```
+    <head>
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+    </head>
+    ```
     - 外部样式表可以在任何文本编辑器中进行编辑。不能包含任何html标签，样式表应该以.css扩展名进行保存。
     - 不要再属性值与单位之间留有空格。
   
   * 内部样式表
-    -当单个文档需要特殊的样式时，就使用内部样式表。
-    -使用<style>标签在文档头部定义内部样式表。
-  ```
-  <head>
-  <style type="text/css">
-  hr {color: sienna;}
-  p {margin-lift:20px}
-  body {background-image: url("images/back40.gif");}
-  </style>
-  </head>  
-  ```
-
+    - 当单个文档需要特殊的样式时，就使用内部样式表。
+    - 使用<style>标签在文档头部定义内部样式表。
+  
+    ```
+    <head>
+    <style type="text/css">
+    hr {color: sienna;}
+    p {margin-lift:20px}
+    body {background-image: url("images/back40.gif");}
+    </style>
+    </head>  
+    ```
 ---
 
-### CSS样式
+# CSS样式
 
-  *CSS背景：可以用纯色或图像作为背景；但所有背景属性都不能继承。
-    - 背景色：使用「 background-color 」属性设置。
+### CSS背景：可以用纯色或图像作为背景；但所有背景属性都不能继承。
+  * 背景色：使用「 background-color 」属性设置。
   ```
   /*设置背景色*/
   P {background-color: gray;}
@@ -191,7 +190,7 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   /*background-color不能继承，默认值是transparent。*/
   ```
   
-    - 背景图像：使用「 background-image 」属性设置。默认值是 none，表示背景上没有放置任何图像。
+  * 背景图像：使用「 background-image 」属性设置。默认值是 none，表示背景上没有放置任何图像。
   ```
   /*设置背景图像前，要先为这个图像属性设置一个URL值*/
   body {background-image: url(/i/eg_bg_04.gif);}
@@ -203,77 +202,83 @@ C：可爱的少女Vivienne，今天麻烦你学习一下CSS、JS的语法哦
   a.radio {background-image: url(/i/eg_bg_07.gif);}
   ```
   
-  - 背景重复：使用「 background-repeat」属性设置，即对背景图像进行平铺。
-  ```
-  /*repeat-x 和 repeat-y 分别导致图像只在水平或垂直方向上重复*/
-  /*no-repeat 则不允许图像在任何方向上平铺*/
-  /*背景图像默认从左上角开始平铺*/
-  body
-  { 
+  * 背景重复：使用「 background-repeat」属性设置，即对背景图像进行平铺。
+    - repeat-x 和 repeat-y 分别导致图像只在水平或垂直方向上重复
+    - no-repeat 则不允许图像在任何方向上平铺。
+    - 背景图像默认从左上角开始平铺。
+    ```
+    body
+    { 
     background-image: url(/i/eg_bg_03.gif);
     background-repeat: repeat-y;
-  }
-  ```
+    }
+    ```
   
-  - 背景定位：使用「 background-position」属性设置,改变图像在背景的位置。
+  * 背景定位：使用「 background-position」属性设置,改变图像在背景的位置。
   ```
-  /*以下是使一个背景图像居中*/
+  /*使一个背景图像居中*/
   body
   { 
     background-image:url('/i/eg_bg_03.gif');
     background-repeat:no-repeat;
     background-position:center;
   }
+  ```
   
-  /*关键词*/
-  /*定位值有许多关键字，如top、bottom、left、right 和 center*/
-  /*关键词可按任何顺序出现，不能超过两个：一个对应水平方向，另一个对应垂直方向*/
-  /*关键词如只出现了一个，另一个默认为center*/
+  - 关键词
+    - 定位值有许多关键字，如top、bottom、left、right 和 center。
+    - 关键词可按任何顺序出现，不能超过两个：一个对应水平方向，另一个对应垂直方向。
+    - 关键词如只出现了一个，另一个默认为center。
   
-  /*百分数值*/
-  /*以下是使一个图像居中，百分数值同时应用于元素和图像*/
-  body
-  { 
+  - 百分数值
+    - 以下是使一个图像居中，百分数值同时应用于元素和图像。
+    ```
+    body
+    { 
     background-image:url('/i/eg_bg_03.gif');
     background-repeat:no-repeat;
     background-position:50% 50%;
-  }
-  
-  /*如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为 50%/
-  /*以下是把图像放在水平方向 2/3、垂直方向 1/3 处*/
-  body
-  { 
+    }
+    
+    ```
+    - 如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为50%。
+    - 以下是把图像放在水平方向 2/3、垂直方向 1/3 处。
+    ```
+    body
+    { 
     background-image:url('/i/eg_bg_03.gif');
     background-repeat:no-repeat;
     background-position:66% 33%;
-  }
-
-  /*长度值*/
-  /*长度值，指元素内「边距区」左上角的偏移，偏移点是图像的左上角*/
-  /*以下是把图像的左上角置于元素内「边距区」左上角向右 50 像素、向下 100 像素*/
-  body
-  { 
-    background-image:url('/i/eg_bg_03.gif');
-    background-repeat:no-repeat;
-    background-position:50px 100px;
-  }
+    }
+    ```
+  - 长度值
+    - 指元素内「边距区」左上角的偏移，偏移点是图像的左上角。
+    ```
+    /*以下是把图像的左上角置于元素内「边距区」左上角向右 50 像素、向下 100 像素*/
+    body
+    { 
+      background-image:url('/i/eg_bg_03.gif');
+      background-repeat:no-repeat;
+      background-position:50px 100px;
+    }
   
-  /*偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐*/
-   ```
+   - 偏移只是从一个左上角到另一个左上角，即图像的左上角与 background-position 声明中的「指定点」对齐。
+     ```
   
-  - 背景锁定：使文档向下滚动时，背景图像不受影响，即锁定背景。
-  ```
-  body
-  {
+  * 背景锁定：使文档向下滚动时，背景图像不受影响，即锁定背景。
+    ```
+    body
+    {
     background-image:url(/i/eg_bg_02.gif);
     background-repeat:no-repeat;
     background-attachment:fixed
-  }
-  
-  /*background-attachment 属性的默认值是scroll，意指在默认情况下，背景会随文档滚动*/
-  ```
+    }
+    ```
+   - background-attachment 属性的默认值是scroll，意指在默认情况下，背景会随文档滚动。
 
-* CSS文本：定义文本的外观，包括颜色、字符间距、对齐、装饰、缩进等。
+---
+
+### CSS文本：定义文本的外观，包括颜色、字符间距、对齐、装饰、缩进等。
   - 缩进文本：使用「text-indent」属性设置，实现文本缩进。所有元素的第一行都可以缩进一个给定的长度，该长度甚至可以是负值。
   ```
   p {text-indent; 5em;}
